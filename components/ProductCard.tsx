@@ -78,7 +78,6 @@ export default function ProductCard({ product }: ProductCardProps) {
           </button>
         </div>
       </div>
-      </div>
     </div>
   );
 }
