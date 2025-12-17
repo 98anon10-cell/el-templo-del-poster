@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { Product } from '@/types';
 import { useCart } from '@/context/CartContext';
-import { Star, TrendingUp, ShoppingCart, Truck } from 'lucide-react';
+import { TrendingUp, ShoppingCart, Truck } from 'lucide-react';
 import { useState } from 'react';
 
 interface ProductCardProps {
@@ -14,7 +14,6 @@ export default function ProductCard({ product }: ProductCardProps) {
   const { addToCart } = useCart();
   const [isHovered, setIsHovered] = useState(false);
   const isPopular = product.price > 20;
-  const rating = (4 + Math.random()).toFixed(1);
 
   const handleAddToCart = () => {
     addToCart(product);
@@ -33,10 +32,6 @@ export default function ProductCard({ product }: ProductCardProps) {
             POPULAR
           </div>
         )}
-        <div className="absolute top-3 right-3 z-10 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-1 shadow-lg">
-          <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-          {rating}
-        </div>
         <Image
           src={product.image}
           alt={product.name}
