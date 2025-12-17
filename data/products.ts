@@ -1,0 +1,68 @@
+import { Product } from '@/types';
+
+export const products: Product[] = [
+  {
+    id: '1',
+    name: 'Naruto Shippuden',
+    description: 'Poster épico de Naruto en modo Sabio',
+    price: 24.99,
+    image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500&h=700&fit=crop',
+    category: 'anime',
+  },
+  {
+    id: '2',
+    name: 'Attack on Titan',
+    description: 'Los titanes atacan la muralla',
+    price: 26.99,
+    image: 'https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=500&h=700&fit=crop',
+    category: 'anime',
+  },
+  {
+    id: '3',
+    name: 'One Piece',
+    description: 'Luffy y los Sombreros de Paja',
+    price: 25.99,
+    image: 'https://images.unsplash.com/photo-1618519764620-7403abdbdfe9?w=500&h=700&fit=crop',
+    category: 'anime',
+  },
+  {
+    id: '4',
+    name: 'Star Wars',
+    description: 'La fuerza te acompaña',
+    price: 29.99,
+    image: 'https://images.unsplash.com/photo-1579566346927-c68383817a25?w=500&h=700&fit=crop',
+    category: 'movies',
+  },
+  {
+    id: '5',
+    name: 'Blade Runner',
+    description: 'Cyberpunk clásico',
+    price: 27.99,
+    image: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500&h=700&fit=crop',
+    category: 'movies',
+  },
+  {
+    id: '6',
+    name: 'The Matrix',
+    description: 'Escoge la píldora roja',
+    price: 28.99,
+    image: 'https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=500&h=700&fit=crop',
+    category: 'movies',
+  },
+  {
+    id: '7',
+    name: 'Stranger Things',
+    description: 'El mundo del revés',
+    price: 23.99,
+    image: 'https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=500&h=700&fit=crop',
+    category: 'tv',
+  },
+  {
+    id: '8',
+    name: 'The Last of Us',
+    description: 'Supervivencia post-apocalíptica',
+    price: 26.99,
+    image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&h=700&fit=crop',
+    category: 'games',
+  },
+];
